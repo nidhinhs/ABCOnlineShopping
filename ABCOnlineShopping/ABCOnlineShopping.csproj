@@ -25,12 +25,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\src\app\cart-popup\cart-popup.ts" />
     <None Remove="ClientApp\src\services\modal.service.ts" />
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="ClientApp\src\app\cart-popup\cart-popup.ts" />
     <TypeScriptCompile Include="ClientApp\src\services\modal.service.ts" />
   </ItemGroup>
 

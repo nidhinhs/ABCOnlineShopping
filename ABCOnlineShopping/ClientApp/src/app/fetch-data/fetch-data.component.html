@@ -91,17 +91,17 @@
         <table class='table table-striped' *ngIf="cartItems">
           <tbody>
             <tr *ngFor="let cartItem of cartItems">
-              <td>{{ cartItem.qty }} {{cartItem.product.itemName}} : {{cartItem.qty * cartItem.product.grossPrice }}</td>
+              <td>{{ cartItem.qty }} {{cartItem.product.itemName}} : {{cartItem.qty * cartItem.product.grossPrice| number : '1.2-2'}}</td>
           </tbody>
           <tfoot>
             <tr>
               <td>
-                Sales Tax: {{salesTax}}
+                Sales Tax: {{salesTax| number : '1.2-2'}}
               </td>
             </tr>
             <tr>
               <td>
-                Total: {{total}}
+                Total: {{total| number : '1.2-2'}}
               </td>
             </tr>
           </tfoot>

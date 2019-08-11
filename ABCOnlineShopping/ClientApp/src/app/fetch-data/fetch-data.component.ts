@@ -60,7 +60,7 @@ export class FetchDataComponent {
     this.total = 0;
     this.cartItems.forEach(i => {
       this.salesTax += i.product.salesTax * i.qty;
-      this.total += i.product.grossPrice * i.qty;
+      this.total += i.product.grossPrice * i.qty;      
     });
   }
 
