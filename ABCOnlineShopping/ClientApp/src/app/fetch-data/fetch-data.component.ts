@@ -51,6 +51,7 @@ export class FetchDataComponent {
     this.cartItems.forEach(i => {
       this.cartItemCount += i.qty;
     });
+    product.currentCount = 0;//After adding change count back to 0
   }
 
   public showCart() {
